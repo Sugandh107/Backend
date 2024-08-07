@@ -60,9 +60,7 @@ const getAdmin = async (req, res) => {
     try {
         const user = await User.findOne(query);
         // console.log(user)
-        if(email !== req.decoded.email){
-            return res.status(403).send({message: "Forbidden access"})
-        }
+       
         let admin = false;
         if(user ){
             admin = user?.role === "admin";
