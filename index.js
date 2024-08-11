@@ -10,6 +10,7 @@ const port = 3000;
 app.use(cors());
 app.use(express.json());
 // mongodb+srv://riderghost10791:Ft5YSDIKsiNFXXY6@rest-database.zgxw9ce.mongodb.net/rest-database?retryWrites=true&w=majority&appName=rest-database
+// mongodb+srv://riderghost10791:Ft5YSDIKsiNFXXY6@rest-database.zgxw9ce.mongodb.net/rest-database?retryWrites=true&w=majority&appName=rest-database
 
 mongoose.connect('mongodb+srv://riderghost10791:Ft5YSDIKsiNFXXY6@rest-database.zgxw9ce.mongodb.net/rest-database?retryWrites=true&w=majority&appName=rest-database')
   .then(() => {
